@@ -10,12 +10,11 @@ A modern personal website built with React and TypeScript. Scaffolded with Vite,
 
 ## Features
 
+- Performance optimized (~62KB gzipped)
 - Responsive design with smooth scroll animations
 - Sticky navigation with active section tracking (Intersection Observer API)
 - Interactive project showcase with detail view
-- Fade/slide animations on scroll
 - Navy and gold color palette
-- Performance optimized (~62KB gzipped)
 
 ## Project Structure
 
