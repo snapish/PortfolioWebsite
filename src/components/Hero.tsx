@@ -2,12 +2,9 @@ export default function Hero() {
   return (
     <header className="hero-section" id="top">
       <div className="hero-copy">
-        <p className="eyebrow">Portfolio</p>
-        <h1>Crafting elegant, thoughtful interfaces</h1>
+        <h1>Genuine Software Developer</h1>
         <p>
-          Frontend engineer focused on visual polish, performance, and user delight. Below
-          are six projects showcasing full-stack capability in React, TypeScript, and modern
-          web design.
+          Thanks for checking out my portfolio! Below you'll find everything you need to convince someone you're me over the phone.
         </p>
         <a href="#projects" className="cta-link">
           View Work

@@ -59,16 +59,16 @@ export const projects: Project[] = [
 
 export const experiences: Experience[] = [
   {
-    title: 'Software Engineer',
-    company: 'Studio Horizon',
-    period: '2024 - Present',
+    title: 'Full Stack Engineer',
+    company: 'GCI, Inc.',
+    period: 'June-Oct 2025',
     description:
-      'Building polished interfaces for product teams, translating rough concepts into dependable, animation-rich user experiences.',
+      'Worked on a small team for the Alaskan telecomms company GCI on their FastFone site. Though my time there was short I gained a decent understanding of in Ruby on Rails. My focus was mainly fixing unhandled errors in production code, and learning how to interact with their infrastructure.',
   },
   {
-    title: 'Frontend Developer',
-    company: 'Blue Harbor Labs',
-    period: '2022 - 2024',
+    title: 'QA Automation Engineer',
+    company: 'Intel',
+    period: '2021 - 2025',
     description:
       'Implemented component systems, refined accessibility patterns, and improved handoff quality between design and engineering.',
   },

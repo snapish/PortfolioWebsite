@@ -7,7 +7,7 @@ export default function AboutSection() {
         <p>
             When I was 14 years old I was really addicted to RuneScape, so much so that I wanted to make my own version of it.
             This lead to me downloading bootleg source code for the game, modifying the code in the Eclipse IDE, 
-            and deploying it for my friends to play before I'd graduated highschool. 
+            and deploying it for my friends to play before I'd graduated highschool.
         <br/>
             As a career path I love software development because there's always a problem to solve. Approaching business solutions in my own way and 
             learning from my more experienced peers is something I'll never get tired of. 
@@ -25,13 +25,13 @@ export default function AboutSection() {
         <br/>
         <h2>Where software?</h2>
         <p>
-            I grew up in rural Minnesota, and got my degree in Computer Science in Fargo North Dakota at NDSU. After graduating in 2020 I moved to Hillsboro Oregon, where I 
+            I grew up in rural Minnesota, and got my degree in Computer Science from NDSU in Fargo, North Dakota. After graduating in 2020 I moved to Hillsboro Oregon, where I 
             now live with my wife and our pets. I've continued feeding my passion as a developer in the Silicon Forest, and plan on keeping it that way!
         </p>
         <br/> 
         <h2>Who software?</h2>
         <p>
-            I'm not sure I can keep this joke going. Check out work experience section below.
+            I'm not sure I can keep this joke going. Check out my work experience below.
         </p>
       </div>
     </section>
