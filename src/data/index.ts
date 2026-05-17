@@ -3,56 +3,65 @@ import type { Project, Experience } from '../types'
 export const projects: Project[] = [
   {
     id: 'project-01',
-    title: 'Tidewatch Analytics',
+    title: 'Ironman.gg',
     description:
-      'A dashboard concept for monitoring shipping patterns, weather windows, and route risk in one cinematic control panel.',
-    stack: ['React', 'TypeScript', 'REST API'],
-    role: 'Frontend Developer',
-    timeline: '2026',
+      'One of my first real-world projects that I created. It\'s a web app for randomizing a character list for various fighting games. Still used monthly by thousands of people!',
+    stack: ['Angular', 'TypeScript', 'Node', 'ExpressJS'],
+    role: 'Full Stack Developer',
+    timeline: '2019-2020',
   },
   {
     id: 'project-02',
-    title: 'Beacon Habit Studio',
+    title: 'AFK SWS',
     description:
-      'A behavior tracker with narrative progress views, ritual streaks, and reflective checkpoints for weekly planning.',
-    stack: ['React', 'Vite', 'CSS Motion'],
-    role: 'Product Engineer',
-    timeline: '2026',
+      'A pet project I made to get acquainted with OpenCV for use in video games. Designed to run for 4+ hours at a time, this script can play an MMO like a real person without being caught by bot detection.',
+    stack: ['Python', 'OpenCV', 'TKinter'],
+    role: 'Developer',
+    timeline: '2021',
   },
   {
     id: 'project-03',
-    title: 'Harbor Commerce UI',
+    title: 'Procedural Animations in UE5',
     description:
-      'An ecommerce storefront prototype focused on visual hierarchy, modular cards, and high-conversion checkout flow.',
-    stack: ['TypeScript', 'State Management', 'Design Systems'],
-    role: 'UI Engineer',
-    timeline: '2025',
-  },
-  {
-    id: 'project-04',
-    title: 'Atlas Teamboard',
-    description:
-      'A collaboration workspace for sprint planning with timeline maps, ownership overlays, and fast keyboard actions.',
-    stack: ['React', 'Component Architecture', 'Accessibility'],
-    role: 'Software Engineer',
-    timeline: '2025',
-  },
-  {
-    id: 'project-05',
-    title: 'Cinder Event Hub',
-    description:
-      'A live events microsite platform with flexible templates, sponsor zones, and content-driven visual storytelling.',
-    stack: ['Vite', 'Responsive Layouts', 'Animation'],
-    role: 'Frontend Engineer',
+      'Created a skeleton project in Unreal Engine for using advanced math to animate a human character. Followed a course offered by Lincoln Margison for the majority of the work.',
+    stack: ['Unreal Engine 5', 'Control Rig', 'Inverse Kinematics'],
+    role: '3D Animator',
     timeline: '2024',
   },
   {
-    id: 'project-06',
-    title: 'Northwind Portfolio CMS',
+    id: 'project-04',
+    title: 'Dookie Clicker',
     description:
-      'A portfolio management tool to curate case studies, edit media-rich pages, and publish showcase-ready content.',
-    stack: ['TypeScript', 'Forms', 'Content Modeling'],
-    role: 'Full Stack Developer',
+      'An incremental game I made in Godot, and published to Steam. Parodying \'Cookie Clicker\', the player is able to scale their resources infinitely, and is encouraged to play daily.',
+    stack: ['Godot Game Engine', 'GDScript', 'SteamWorks API'],
+    role: 'Game Developer, Publisher',
+    timeline: '2024-2025',
+  },
+  {
+    id: 'project-05',
+    title: 'Terraria Damage Tracker',
+    description:
+      'A mod for Terraria that tracks individual player\'s damage to boss monsters in a multiplayer environment.',
+    stack: ['C#', 'Visual Studio'],
+    role: 'Mod Developer',
+    timeline: '2022',
+  },
+  {
+    id: 'project-06',
+    title: 'Glimmervoid',
+    description:
+      'A web tool used to search Magic: The Gathering cards. I worked alongside 2 other classmates, and did the majority of the front end development, and configured a wrapper for the API calls.',
+    stack: ['REST APIs', 'Angular'],
+    role: 'Front End Developer',
+    timeline: '2019',
+  },
+    {
+    id: 'project-07',
+    title: 'Lucia\'s Bottle',
+    description:
+      'A 2D puzzle platformer game I developed for a 48hr game jam, alongside a texture artist and audio engineer. The game is fully playable in a web browser and on Windows.',
+    stack: ['Godot'],
+    role: 'Game Developer',
     timeline: '2024',
   },
 ]
