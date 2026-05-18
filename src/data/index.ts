@@ -64,6 +64,15 @@ export const projects: Project[] = [
     role: 'Game Developer',
     timeline: '2024',
   },
+      {
+    id: 'project-08',
+    title: 'Pi-Hole',
+    description:
+      'Used a Raspberry Pi as a DNS filter to block ads on a per-device basis. All traffic on the network is checked by the device, and if the network request is coming from a known advertising/malicious domain it is sent to the ether.',
+    stack: ['Raspberry Pi Zero', 'Networking'],
+    role: 'Tutorial Follower',
+    timeline: '2026',
+  },
 ]
 
 export const experiences: Experience[] = [
@@ -72,20 +81,20 @@ export const experiences: Experience[] = [
     company: 'GCI, Inc.',
     period: 'June-Oct 2025',
     description:
-      'Worked on a small team for the Alaskan telecomms company GCI on their FastFone site. Though my time there was short I gained a decent understanding of in Ruby on Rails. My focus was mainly fixing unhandled errors in production code, and learning how to interact with their infrastructure.',
+      'Worked on an 8 person team for the Alaskan telecomms company GCI on their FastFone website. I was designated to fix as many unhandled errors in production as possible. My focus was mainly learning the basics and conventions of Ruby on Rails. Though my time there was short, I gained a good understanding of what kind of resposibilities a full stack engineer has.',
   },
   {
     title: 'QA Automation Engineer',
     company: 'Intel',
     period: '2021 - 2025',
     description:
-      'Implemented component systems, refined accessibility patterns, and improved handoff quality between design and engineering.',
+      'Primarily focused on QA automation and mitigating issues with the products before an update is shipped. I worked on two projects, Intel eXtreme Tuning Utility (XTU), and Intel Application Opimization (APO). For a more granular explanation of my job duties see my resume.',
   },
   {
-    title: 'Junior Web Developer',
-    company: 'Nova Collective',
-    period: '2021 - 2022',
+    title: 'AI Engineer',
+    company: 'Central Boiler',
+    period: '2023 - 2024',
     description:
-      'Delivered responsive marketing pages and early product prototypes while learning modern JavaScript and UI architecture.',
+      'Brought on as a contractor to find business applications of AI tools. Things like AI assisted coding were just becoming mainstream, and it was my job to research how these things work under the hood, then present them to the IT department. \nAdditionally, I created an ARIMA model prediction model used to forecast sales numbers. I did this in Python by aggregating yearly sales data, relevant data known to affect sales, and trained the model based on that data.',
   },
 ]
