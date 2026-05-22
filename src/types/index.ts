@@ -5,6 +5,7 @@ export type Project = {
   stack: string[]
   role: string
   timeline: string
+  links?: ExternalLink[]
 }
 
 export type Experience = {
@@ -12,4 +13,11 @@ export type Experience = {
   company: string
   period: string
   description: string
+  links?: ExternalLink[]
+}
+
+export type ExternalLink = {
+  label: string
+  href: string
+  icon?: string
 }

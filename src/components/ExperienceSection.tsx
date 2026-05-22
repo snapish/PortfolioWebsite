@@ -18,6 +18,22 @@ export default function ExperienceSection() {
             <h3>{experience.title}</h3>
             <p className="company">{experience.company}</p>
             <p>{experience.description}</p>
+            {experience.links && experience.links.length > 0 && (
+              <div className="card-links" aria-label={`${experience.company} links`}>
+                {experience.links.map((link) => (
+                  <a
+                    key={`${experience.title}-${link.label}`}
+                    className="link-chip"
+                    href={link.href}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {link.icon && <span aria-hidden="true">{link.icon}</span>}
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            )}
           </article>
         ))}
       </div>

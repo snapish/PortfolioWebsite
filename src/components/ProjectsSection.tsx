@@ -22,6 +22,22 @@ export default function ProjectsSection() {
                 <li key={item}>{item}</li>
               ))}
             </ul>
+            {project.links && project.links.length > 0 && (
+              <div className="card-links" aria-label={`${project.title} links`}>
+                {project.links.map((link) => (
+                  <a
+                    key={`${project.id}-${link.label}`}
+                    className="link-chip"
+                    href={link.href}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {link.icon && <span aria-hidden="true">{link.icon}</span>}
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            )}
           </article>
         ))}
       </div>
