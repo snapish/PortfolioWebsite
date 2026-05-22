@@ -1,15 +1,48 @@
 import { projects } from '../data'
 import { getFaviconUrl, isGitHubUrl } from '../utils/linkIcons'
+import { toWords } from 'number-to-words'
+
+function getTimelineBounds(timeline: string) {
+  const years = timeline.match(/\d{4}/g)?.map(Number) ?? []
+  const start = years[0] ?? Number.POSITIVE_INFINITY
+  const end = years[1] ?? start
+
+  return { start, end }
+}
 
 export default function ProjectsSection() {
+  const sortedProjects = [...projects].sort((a, b) => {
+    const aBounds = getTimelineBounds(a.timeline)
+    const bBounds = getTimelineBounds(b.timeline)
+
+    if (aBounds.start !== bBounds.start) {
+      return bBounds.start - aBounds.start
+    }
+
+    if (aBounds.end !== bBounds.end) {
+      return bBounds.end - aBounds.end
+    }
+
+    return a.title.localeCompare(b.title)
+  })
+
+  const projectCountWord = toWords(sortedProjects.length)
+  const capitalizedProjectCountWord =
+    projectCountWord.charAt(0).toUpperCase() + projectCountWord.slice(1)
+
+  const projectsHeading =
+    sortedProjects.length === 1
+      ? `${capitalizedProjectCountWord} Featured Build`
+      : `${capitalizedProjectCountWord} Featured Builds`
+
   return (
     <section className="content-island" id="projects">
       <div>
         <p className="eyebrow">Projects</p>
-        <h2>Six featured builds</h2>
+        <h2>{projectsHeading}</h2>
       </div>
       <div className="project-grid">
-        {projects.map((project, index) => (
+        {sortedProjects.map((project, index) => (
           <article
             key={project.id}
             className="project-card"

@@ -11,7 +11,7 @@ export const projects: Project[] = [
     timeline: '2019-2020',
     links: [
       { label: 'Live', href: 'https://ironman.gg', icon: '[]' },
-      { label: 'GitHub', href: 'https://github.com', icon: '</>' },
+      { label: 'GitHub', href: 'https://github.com/snapish/Multiman', icon: '</>' },
     ],
   },
   {
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     stack: ['Python', 'OpenCV', 'TKinter'],
     role: 'Developer',
     timeline: '2021',
-    links: [{ label: 'GitHub', href: 'https://github.com', icon: '</>' }],
+    links: [{ label: 'GitHub', href: 'https://github.com/snapish/afkSWS', icon: '</>' }],
   },
   {
     id: 'project-03',
@@ -33,8 +33,8 @@ export const projects: Project[] = [
     role: '3D Animator',
     timeline: '2024',
     links: [
-      { label: 'Course', href: 'https://www.youtube.com', icon: '()' },
-      { label: 'GitHub', href: 'https://github.com', icon: '</>' },
+      { label: 'Course', href: 'https://www.udemy.com/course/procedural-animation/', icon: '()' },
+      { label: 'GitHub', href: 'https://github.com/snapish/ProceduralAnimationCourse', icon: '</>' },
     ],
   },
   {
@@ -46,19 +46,18 @@ export const projects: Project[] = [
     role: 'Game Developer, Publisher',
     timeline: '2024-2025',
     links: [
-      { label: 'Steam', href: 'https://store.steampowered.com', icon: '[]' },
-      { label: 'GitHub', href: 'https://github.com', icon: '</>' },
+      { label: 'Steam', href: 'https://store.steampowered.com/app/3360230/Dookie_Clicker/', icon: '[]' },
     ],
   },
   {
     id: 'project-05',
     title: 'Terraria Damage Tracker',
     description:
-      'A mod for Terraria that tracks individual player\'s damage to boss monsters in a multiplayer environment.',
+      'A mod for Terraria that tracks individual player\'s damage to boss monsters in a multiplayer environment. Shows a UI panel with real-time updates to player stats.',
     stack: ['C#', 'Visual Studio'],
     role: 'Mod Developer',
     timeline: '2022',
-    links: [{ label: 'GitHub', href: 'https://github.com', icon: '</>' }],
+    links: [{ label: 'GitHub', href: 'https://github.com/snapish/DamageTracker', icon: '</>' }],
   },
   {
     id: 'project-06',
@@ -68,7 +67,7 @@ export const projects: Project[] = [
     stack: ['REST APIs', 'Angular'],
     role: 'Front End Developer',
     timeline: '2019',
-    links: [{ label: 'GitHub', href: 'https://github.com', icon: '</>' }],
+    links: [{ label: 'GitHub', href: 'https://github.com/snapish/Glimmervoid-1', icon: '</>' }],
   },
   {
     id: 'project-07',
@@ -79,8 +78,7 @@ export const projects: Project[] = [
     role: 'Game Developer',
     timeline: '2024',
     links: [
-      { label: 'Play', href: 'https://itch.io', icon: '[]' },
-      { label: 'GitHub', href: 'https://github.com', icon: '</>' },
+      { label: 'Play', href: 'https://snapish.itch.io/lucias-bottle', icon: '[]' },
     ],
   },
   {
@@ -105,7 +103,7 @@ export const experiences: Experience[] = [
     period: 'June-Oct 2025',
     description:
       'Worked on an 8 person team for the Alaskan telecomms company GCI on their FastFone website. I was designated to fix as many unhandled errors in production as possible. My focus was mainly learning the basics and conventions of Ruby on Rails. Though my time there was short, I gained a good understanding of what kind of resposibilities a full stack engineer has.',
-    links: [{ label: 'Company Site', href: 'https://www.gci.com', icon: '[]' }],
+    links: [{ label: 'GCI', href: 'https://www.gci.com', icon: '[]' }],
   },
   {
     title: 'QA Automation Engineer',
@@ -113,7 +111,7 @@ export const experiences: Experience[] = [
     period: '2021 - 2025',
     description:
       'Primarily focused on QA automation and mitigating issues with the products before an update is shipped. I worked on two projects, Intel eXtreme Tuning Utility (XTU), and Intel Application Opimization (APO). For a more granular explanation of my job duties see my resume.',
-    links: [{ label: 'Company Site', href: 'https://www.intel.com', icon: '[]' }],
+    links: [{ label: 'Intel', href: 'https://www.intel.com', icon: '[]' }],
   },
   {
     title: 'AI Engineer',
@@ -121,6 +119,6 @@ export const experiences: Experience[] = [
     period: '2023 - 2024',
     description:
       'Brought on as a contractor to find business applications of AI tools. Things like AI assisted coding were just becoming mainstream, and it was my job to research how these things work under the hood, then present them to the IT department. \nAdditionally, I created an ARIMA model prediction model used to forecast sales numbers. I did this in Python by aggregating yearly sales data, relevant data known to affect sales, and trained the model based on that data.',
-    links: [{ label: 'Company Site', href: 'https://centralboiler.com', icon: '[]' }],
+    links: [{ label: 'Central Boiler', href: 'https://centralboiler.com', icon: '[]' }],
   },
 ]
