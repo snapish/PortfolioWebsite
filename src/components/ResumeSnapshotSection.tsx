@@ -1,3 +1,5 @@
+import { RESUME_REQUEST_LINKS } from '../data/contact'
+
 const RESUME_POINTS = [
   'Full-stack and automation experience across web apps, tooling, and game-adjacent projects.',
   'Comfortable shipping from prototype to production with TypeScript, Python, and modern front-end tooling.',
@@ -11,8 +13,8 @@ export default function ResumeSnapshotSection() {
         <p className="eyebrow">Resume</p>
         <h2>Resume snapshot</h2>
         <p>
-          A quick summary for recruiters and hiring managers. For full experience,
-          projects, and technical depth, use the links below.
+          A quick summary for recruiters and hiring managers. If you want a full
+          copy of my resume, request it directly through email or LinkedIn.
         </p>
       </div>
       <div className="resume-panel">
@@ -22,14 +24,18 @@ export default function ResumeSnapshotSection() {
           ))}
         </ul>
         <div className="resume-actions">
-          <a className="link-chip" href="/resume.pdf" target="_blank" rel="noreferrer">
-            <span aria-hidden="true">[]</span>
-            Download Resume
-          </a>
-          <a className="link-chip" href="https://www.linkedin.com" target="_blank" rel="noreferrer">
-            <span aria-hidden="true">in</span>
-            LinkedIn
-          </a>
+          {RESUME_REQUEST_LINKS.map((link) => (
+            <a
+              key={link.label}
+              className="link-chip"
+              href={link.href}
+              target={link.href.startsWith('http') ? '_blank' : undefined}
+              rel="noreferrer"
+            >
+              {link.icon && <span aria-hidden="true">{link.icon}</span>}
+              {link.label}
+            </a>
+          ))}
         </div>
       </div>
     </section>

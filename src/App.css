@@ -511,6 +511,13 @@ main {
   font-size: 0.65rem;
 }
 
+.link-chip span img {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 0.2rem;
+  display: block;
+}
+
 .link-chip:hover,
 .link-chip:focus-visible {
   border-color: #ffc300;

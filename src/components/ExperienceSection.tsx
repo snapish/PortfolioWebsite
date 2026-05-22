@@ -1,4 +1,5 @@
 import { experiences } from '../data'
+import { getFaviconUrl } from '../utils/linkIcons'
 
 export default function ExperienceSection() {
   return (
@@ -20,18 +21,28 @@ export default function ExperienceSection() {
             <p>{experience.description}</p>
             {experience.links && experience.links.length > 0 && (
               <div className="card-links" aria-label={`${experience.company} links`}>
-                {experience.links.map((link) => (
-                  <a
-                    key={`${experience.title}-${link.label}`}
-                    className="link-chip"
-                    href={link.href}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {link.icon && <span aria-hidden="true">{link.icon}</span>}
-                    {link.label}
-                  </a>
-                ))}
+                {experience.links.map((link) => {
+                  const faviconUrl = getFaviconUrl(link.href)
+
+                  return (
+                    <a
+                      key={`${experience.title}-${link.label}`}
+                      className="link-chip"
+                      href={link.href}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {faviconUrl ? (
+                        <span aria-hidden="true">
+                          <img src={faviconUrl} alt="" loading="lazy" decoding="async" />
+                        </span>
+                      ) : (
+                        link.icon && <span aria-hidden="true">{link.icon}</span>
+                      )}
+                      {link.label}
+                    </a>
+                  )
+                })}
               </div>
             )}
           </article>

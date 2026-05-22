@@ -1,4 +1,5 @@
 import { projects } from '../data'
+import { getFaviconUrl, isGitHubUrl } from '../utils/linkIcons'
 
 export default function ProjectsSection() {
   return (
@@ -24,18 +25,29 @@ export default function ProjectsSection() {
             </ul>
             {project.links && project.links.length > 0 && (
               <div className="card-links" aria-label={`${project.title} links`}>
-                {project.links.map((link) => (
-                  <a
-                    key={`${project.id}-${link.label}`}
-                    className="link-chip"
-                    href={link.href}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {link.icon && <span aria-hidden="true">{link.icon}</span>}
-                    {link.label}
-                  </a>
-                ))}
+                {project.links.map((link) => {
+                  const faviconUrl = getFaviconUrl(link.href)
+                  const shouldUseFavicon = !isGitHubUrl(link.href)
+
+                  return (
+                    <a
+                      key={`${project.id}-${link.label}`}
+                      className="link-chip"
+                      href={link.href}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {shouldUseFavicon && faviconUrl ? (
+                        <span aria-hidden="true">
+                          <img src={faviconUrl} alt="" loading="lazy" decoding="async" />
+                        </span>
+                      ) : (
+                        link.icon && <span aria-hidden="true">{link.icon}</span>
+                      )}
+                      {link.label}
+                    </a>
+                  )
+                })}
               </div>
             )}
           </article>
