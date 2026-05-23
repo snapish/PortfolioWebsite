@@ -504,11 +504,14 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1.1rem;
+  width: 1.35rem;
   height: 1.1rem;
+  flex-shrink: 0;
   border-radius: 999px;
   background: rgb(255 195 0 / 14%);
   font-size: 0.65rem;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .link-chip span img {

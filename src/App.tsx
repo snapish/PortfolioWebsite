@@ -5,7 +5,6 @@ import AboutSection from './components/AboutSection'
 import OutcomesSection from './components/OutcomesSection'
 import ExperienceSection from './components/ExperienceSection'
 import ProjectsSection from './components/ProjectsSection'
-import ResumeSnapshotSection from './components/ResumeSnapshotSection'
 import ContactSection from './components/ContactSection'
 import { useScrollSpy } from './hooks/useScrollSpy'
 import { useScrollAnimations } from './hooks/useScrollAnimations'
@@ -27,7 +26,7 @@ export default function App() {
         <ExperienceSection />
         <ProjectsSection />
         <OutcomesSection />
-        <ResumeSnapshotSection />
+        {/* <ResumeSnapshotSection /> */}
         <ContactSection />
       </main>
       <footer className="site-footer">
