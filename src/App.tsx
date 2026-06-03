@@ -1,10 +1,11 @@
 import './App.css'
 import NavBar from './components/NavBar'
 import Hero from './components/Hero'
-import ProjectShowcase from './components/ProjectShowcase'
 import AboutSection from './components/AboutSection'
+import OutcomesSection from './components/OutcomesSection'
 import ExperienceSection from './components/ExperienceSection'
 import ProjectsSection from './components/ProjectsSection'
+import ContactSection from './components/ContactSection'
 import { useScrollSpy } from './hooks/useScrollSpy'
 import { useScrollAnimations } from './hooks/useScrollAnimations'
 
@@ -19,11 +20,14 @@ export default function App() {
     <div className="site-shell">
       <NavBar activeSection={activeSection} />
       <Hero />
-      <ProjectShowcase />
+      {/* <ProjectShowcase /> */}
       <main>
         <AboutSection />
         <ExperienceSection />
         <ProjectsSection />
+        <OutcomesSection />
+        {/* <ResumeSnapshotSection /> */}
+        <ContactSection />
       </main>
       <footer className="site-footer">
         <a href="#top">Back to top</a>

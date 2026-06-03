@@ -7,6 +7,9 @@ const NAV_LINKS = [
   { href: '#about', label: 'About', id: 'about' },
   { href: '#experience', label: 'Experience', id: 'experience' },
   { href: '#projects', label: 'Projects', id: 'projects' },
+  { href: '#outcomes', label: 'Outcomes', id: 'outcomes' },
+  { href: '#resume', label: 'Resume', id: 'resume' },
+  { href: '#contact', label: 'Contact', id: 'contact' },
 ]
 
 export default function NavBar({ activeSection }: NavBarProps) {
